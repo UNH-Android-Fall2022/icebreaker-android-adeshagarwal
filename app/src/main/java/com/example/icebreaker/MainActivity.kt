@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
             .addOnFailureListener { e ->
                 Log.w(TAG, "Error adding document", e)
             }
-        firstName.setText("")
+        firstName.setText("BBB")
         lastName.setText("")
         preferredName.setText("")
         answer.setText("")
