@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     private val TAG="IceBreakerAndroidDebug"
     private val db=Firebase.firestore
     private var questionBank:MutableList<Question> = arrayListOf()
-
     //Check if code is auto-saved via fork
     //Add TODO LIST
 
@@ -43,15 +42,11 @@ class MainActivity : AppCompatActivity() {
             val answer=binding.txtAnswer
             writeStudentToFirebase()
         }
-
         //getQuestionsFromFirebase()
-
     }
-
     override fun onDestroy() {
         super.onDestroy()
     }
-
     private fun getQuestionsFromFirebase()
     {
         Log.d("IceBreakerAndroidDebug","Fetching Questions from Firebase")
@@ -71,7 +66,6 @@ class MainActivity : AppCompatActivity() {
                 Log.w(TAG, "Error getting documents", exception)
             }
     }
-
     private fun writeStudentToFirebase(){
         val firstName=binding.txtFirstName
         val lastName=binding.txtLastName
