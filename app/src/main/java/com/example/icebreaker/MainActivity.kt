@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
     private val db=Firebase.firestore
     private var questionBank:MutableList<Question> = arrayListOf()
 
+    //Check if code is auto-saved via fork
+    //Add TODO LIST
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
